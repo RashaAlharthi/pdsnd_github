@@ -13,6 +13,3 @@ All csv files along with the Python file that contains all the code
 ### Credits
 To my Experience :)
 
-### Contact me
-If you have any inqueiries about this project you can contact me at my email: Alharthi.rasha99@gmail.com
-
