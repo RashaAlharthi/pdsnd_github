@@ -1,11 +1,14 @@
+#import the packages
 import time
 import pandas as pd
 import numpy as np
 
+#define the cities for each file
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+#method that filter the data based on the user input
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -75,7 +78,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+#method that load specific data based on the parameters
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -102,7 +105,7 @@ def load_data(city, month, day):
 
     return df
 
-
+#method that displaying some statics about the traveling time
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -123,7 +126,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#method that displying some statics about the trip stations
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -143,7 +146,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#method that Displaying some statistics on the trip duration
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
