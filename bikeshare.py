@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-#method that filter the data based on the user input
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -78,7 +78,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-#method that load specific data based on the parameters
+
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -105,7 +105,7 @@ def load_data(city, month, day):
 
     return df
 
-#method that displaying some statics about the traveling time
+
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -126,7 +126,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-#method that displying some statics about the trip stations
+
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -146,7 +146,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-#method that Displaying some statistics on the trip duration
+
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -162,7 +162,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-#method that displaying some statics on bikeshare users
+
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
@@ -181,7 +181,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-#method that displaying some rows of the data for the user
+
 def invidual_dataframe(df):
     """Displays invidual data for the user"""
     i = 0
@@ -201,7 +201,7 @@ def invidual_dataframe(df):
         except:
             print('that invalid choice. Please choose yes or no.\n')
 
-#main method to call all the functions and run the code
+
 def main():
     while True:
         city, month, day = get_filters()
