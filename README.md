@@ -5,10 +5,10 @@
 Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+Use Python to understand U.S. bikeshare data. Calculate statistics and build an interactive environment where a user chooses the data and filter for a dataset to analyze.
 
 ### Files used
-Include the files used
+All csv files along with the Python file that contains all the code 
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
