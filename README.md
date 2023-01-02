@@ -11,5 +11,5 @@ Use Python to understand U.S. bikeshare data. Calculate statistics and build an 
 All csv files along with the Python file that contains all the code 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+To my Experience :)
 
